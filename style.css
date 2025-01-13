@@ -1,6 +1,9 @@
 .socials-container {
     display: flex;
     gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 
 .socials-container a {
