@@ -1,28 +1,28 @@
-:root{  
+:root {
     --background-color: hsl(0, 0%, 0%);
     --text-color: hsl(227, 10%, 46%);
     --card-color: hsl(0, 0%, 59%);
 }
 
-body{
+body {
     background-color: var(--background-color);
     font-family: 'Kumbh Sans', sans-serif;
     font-size: 18px;
     margin: 100px 20px 20px 20px;
 }
 
-hr{
+hr {
     width: 100%;
 }
 
-.container{
+.container {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100%;
 }
 
-.card{
+.card {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -33,9 +33,43 @@ hr{
     margin: 20px;
     width: 330px;
     height: 350px;
+    position: relative;
 }
 
-.card .profile-informations{
+@property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+.card::after, .card::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: conic-gradient(from var(--angle), transparent 50%, white);
+    z-index: -1;
+    padding: 5px;
+    bottom: -5px;
+    border-radius: 10px;
+    animation: 3s spin linear infinite;
+}
+
+.card::before {
+    filter: blur(1.5rem);
+}
+
+@keyframes spin {
+    from {
+        --angle: 0deg;
+    }
+
+    to {
+        --angle: 360deg;
+    }
+}
+
+.card .profile-informations {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -44,12 +78,12 @@ hr{
     height: 100%;
 }
 
-.card .profile-informations img{
+.card .profile-informations img {
     border-radius: 50%;
     margin-top: 20px;
 }
 
-.card .profile-numbers{
+.card .profile-numbers {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -58,18 +92,18 @@ hr{
     text-align: center;
 }
 
-.profile-numbers .info .counter, 
-.card .profile-informations p{
+.profile-numbers .info .counter,
+.card .profile-informations p {
     font-weight: 700;
 }
 
 .card .profile-informations .age,
-.card .profile-informations .city, 
-.profile-numbers .info .counter-type{
+.card .profile-informations .city,
+.profile-numbers .info .counter-type {
     color: var(--text-color);
 }
 
-.pfp{
+.pfp {
     height: 100px;
     width: 100px;
     border-radius: 50%;
@@ -110,13 +144,14 @@ hr{
     flex-shrink: 0;
     display: grid;
     place-items: center;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    box-shadow: rgba(255, 255, 255, 0.3) 0px 19px 38px, rgba(255, 255, 255, 0.22) 0px 15px 12px;
 }
+
 .socials-container a svg {
     height: 32px;
 }
 
-.socials-container a::before{
+.socials-container a::before {
     content: attr(data-social);
     position: absolute;
     background-color: var(--accent-color);
@@ -127,7 +162,7 @@ hr{
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.0);
     transform: translateY(-30px) rotate(25deg);
     opacity: 0;
-    transition: 200ms cubic-bezier(.42,0,.44,1.68);
+    transition: 200ms cubic-bezier(.42, 0, .44, 1.68);
 }
 
 .socials-container a:hover {
@@ -145,15 +180,15 @@ hr{
     border-top: 10px solid var(--accent-color);
     transform: translateY(0) rotate(25deg);
     opacity: 0;
-    transition: 200ms cubic-bezier(.42,0,.44,1.68);
+    transition: 200ms cubic-bezier(.42, 0, .44, 1.68);
 }
 
-.socials-container a:hover::before{
-     transform: translateY(-65px) rotate(0);
-     opacity: 1;
+.socials-container a:hover::before {
+    transform: translateY(-65px) rotate(0);
+    opacity: 1;
 }
 
-.socials-container a:hover::after{
+.socials-container a:hover::after {
     transform: translateY(-45px) rotate(0);
     opacity: 1;
 }
