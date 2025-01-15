@@ -8,18 +8,11 @@ body {
     background-image: url('./img/l3nobackgroundred.png');
     font-family: 'Kumbh Sans', sans-serif;
     font-size: 18px;
-    margin: 100px 20px 20px 20px;
+    margin: 120px 20px 20px 20px;
 }
 
 hr {
     width: 100%;
-}
-
-.container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
 }
 
 .card {
@@ -111,7 +104,6 @@ hr {
 }
 
 .container {
-
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -127,7 +119,7 @@ hr {
 
 
 .socials-container {
-    margin: 30px 20px 20px 20px;
+    margin: 40px 20px 20px 20px;
     display: flex;
     gap: 20px;
     justify-content: center;
@@ -198,7 +190,7 @@ hr {
     color: white;
     size: 15px;
     display: flex;
-    margin-top: 160px;
+    margin-top: 135px;
 }
 
 .link {
