@@ -42,7 +42,8 @@ hr {
     inherits: false;
 }
 
-.card::after, .card::before {
+.card::after,
+.card::before {
     content: '';
     position: absolute;
     height: 100%;
@@ -191,4 +192,15 @@ hr {
 .socials-container a:hover::after {
     transform: translateY(-45px) rotate(0);
     opacity: 1;
+}
+
+.water-mark {
+    color: white;
+    size: 15px;
+    display: flex;
+    margin-top: 160px;
+}
+
+.link {
+    color: white;
 }
