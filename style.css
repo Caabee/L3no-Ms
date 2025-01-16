@@ -1,5 +1,4 @@
 :root {
-    --background-color: hsl(0, 0%, 0%);
     --text-color: hsl(227, 10%, 46%);
     --card-color: hsl(0, 0%, 59%);
 }
@@ -41,7 +40,7 @@ hr {
     position: absolute;
     height: 100%;
     width: 100%;
-    background-image: conic-gradient(from var(--angle), transparent 50%, white);
+    background-image: conic-gradient(from var(--angle), transparent 40%, white);
     z-index: -1;
     padding: 5px;
     bottom: -5px;
@@ -72,11 +71,6 @@ hr {
     height: 100%;
 }
 
-.card .profile-informations img {
-    border-radius: 50%;
-    margin-top: 20px;
-}
-
 .card .profile-numbers {
     display: flex;
     align-items: center;
@@ -98,6 +92,7 @@ hr {
 }
 
 .pfp {
+    margin-top: 20px;
     height: 100px;
     width: 100px;
     border-radius: 50%;
