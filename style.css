@@ -7,7 +7,7 @@ body {
     background-image: url('./img/l3nobackgroundred.png');
     font-family: 'Kumbh Sans', sans-serif;
     font-size: 18px;
-    margin: 120px 20px 20px 20px;
+    transform: translateY(120px);
 }
 
 hr {
@@ -114,7 +114,7 @@ hr {
 
 
 .socials-container {
-    margin: 40px 20px 20px 20px;
+    transform: translateY(40px);
     display: flex;
     gap: 20px;
     justify-content: center;
