@@ -4,7 +4,7 @@
 }
 
 body {
-    background-image: url('./img/l3nobackgroundred.png');
+    background-image: url('../img/l3nobackgroundred.png');
     font-family: 'Kumbh Sans', sans-serif;
     font-size: 18px;
     transform: translateY(120px);
@@ -184,8 +184,8 @@ hr {
 .water-mark {
     color: white;
     size: 15px;
-    display: flex;
-    margin-top: 135px;
+    padding-left: 40px;
+    margin-top: 170px;
 }
 
 .link {
