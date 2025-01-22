@@ -82,7 +82,7 @@ hr {
 
 .profile-numbers .info .counter,
 .card .profile-informations p {
-    font-weight: 700;
+    font-weight: 800;
 }
 
 .card .profile-informations .age,
@@ -147,7 +147,7 @@ hr {
     text-decoration: none;
     padding: 0.5em 1em;
     border-radius: 100px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.0);
+    box-shadow: 0 5px 10px #000;
     transform: translateY(-30px) rotate(25deg);
     opacity: 0;
     transition: 200ms cubic-bezier(.42, 0, .44, 1.68);
@@ -168,7 +168,7 @@ hr {
     border-top: 10px solid var(--accent-color);
     transform: translateY(0) rotate(25deg);
     opacity: 0;
-    transition: 200ms cubic-bezier(.42, 0, .44, 1.68);
+    transition: 300ms cubic-bezier(.42, 0, .44, 1.68);
 }
 
 .socials-container a:hover::before {
