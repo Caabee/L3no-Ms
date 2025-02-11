@@ -2,8 +2,9 @@
 
     .socials-container {
             display: grid;
+            transform: translateX(30px);
             padding: 3em;
-            grid-gap: 2em;
+            grid-gap: 1.5em;
             grid-template-columns: repeat(auto-fit, minmax(90px, 1fr)) ;
     }
 
