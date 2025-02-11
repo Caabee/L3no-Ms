@@ -1,0 +1,23 @@
+@media (max-width: 600px) {
+
+    .socials-container {
+            display: grid;
+            padding: 3em;
+            grid-gap: 2em;
+            grid-template-columns: repeat(auto-fit, minmax(90px, 1fr)) ;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 25px;
+        background-color: #fff;
+        border-radius: 10px;
+        margin: 20px;
+        width: 280px;
+        height: 310px;
+        position: relative;
+    }
+  }
