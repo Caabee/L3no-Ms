@@ -1,0 +1,22 @@
+:root {
+    --text-color: hsl(227, 10%, 46%);
+    --card-color: hsl(0, 0%, 59%);
+}
+
+body {
+    background-image: url('../img/l3nobackgroundred.png');
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    transform: translateY(120px);
+}
+
+.water-mark {
+    color: #fff;
+    size: 15px;
+    padding-left: 40px;
+    margin-top: 180px;
+}
+
+.link {
+    color: #fff;
+}
