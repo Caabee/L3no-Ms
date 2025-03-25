@@ -1,8 +1,8 @@
 @media (max-width: 600px) {
 
     body {
-    background-repeat: no-repeat;
-    background-size: 650%;
+        background-repeat: no-repeat;
+        background-size: 650%;
     }
 
     .socials-container {
@@ -33,6 +33,8 @@
         border-radius: 20px;
         height: 72px;
         width: 120px;
+        display: flex;
+        transform: translateX(10px);
         box-sizing: border-box;
         flex-shrink: 0;
         display: grid;
@@ -46,5 +48,21 @@
 
     .water-mark {
         margin-top: 25px;
+        padding: 25px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 900px) {
+
+    body {
+        background-repeat: no-repeat;
+        background-size: 350%;
+    }
+
+    .water-mark {
+        margin-top: 25px;
+        padding: 25px;
+        font-size: 20px;
     }
 }
