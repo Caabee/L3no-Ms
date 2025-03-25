@@ -5,6 +5,9 @@
 
 body {
     background-image: url('../img/l3nobackgroundred.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 130%;
     font-family: 'Kumbh Sans', sans-serif;
     font-size: 18px;
     transform: translateY(120px);
@@ -14,7 +17,7 @@ body {
     color: #fff;
     size: 15px;
     padding-left: 40px;
-    margin-top: 180px;
+    margin-top: 10px;
 }
 
 .link {

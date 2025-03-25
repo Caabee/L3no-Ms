@@ -1,11 +1,16 @@
 @media (max-width: 600px) {
 
+    body {
+    background-repeat: no-repeat;
+    background-size: 650%;
+    }
+
     .socials-container {
-            display: grid;
-            transform: translateX(0px);
-            padding: 3em;
-            grid-gap: 1.5em;
-            grid-template-columns: repeat(auto-fit, minmax(90px, 1fr)) ;
+        display: grid;
+        transform: translateX(0px);
+        padding: 3em;
+        grid-gap: 1.5em;
+        grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
     }
 
     .card {
@@ -35,7 +40,11 @@
         box-shadow: rgba(255, 255, 255, 0.3) 0px 19px 38px, rgba(255, 255, 255, 0.22) 0px 15px 12px;
     }
 
-    .water-mark {
-        margin-top: -35px;
+    .last-container {
+        margin-top: -80px;
     }
-  }
+
+    .water-mark {
+        margin-top: 25px;
+    }
+}
