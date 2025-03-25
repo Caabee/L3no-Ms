@@ -52,17 +52,3 @@
         font-size: 20px;
     }
 }
-
-@media (max-width: 900px) {
-
-    body {
-        background-repeat: no-repeat;
-        background-size: 350%;
-    }
-
-    .water-mark {
-        margin-top: 25px;
-        padding: 25px;
-        font-size: 20px;
-    }
-}
